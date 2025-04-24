@@ -1,0 +1,19 @@
+GET http://192.168.1.3:6080/api/client? HTTP/1.1
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4iLCJpcCI6IiIsImV4cCI6MTc0NjA2MTYwNX0.1KEa81e-j6H8STv7XDKYzFX7265bsu9CFNNzdgugVUY
+
+
+###
+POST http://192.168.1.3:6080/api/auth/login HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+###
+GET http://192.168.1.3:6080/api/server/version HTTP/1.1
+Accept: application/json
+Authorization:
